@@ -1,0 +1,10 @@
+<h2>What is your name?</h2>
+
+<form action="/new_player" method="post">
+  Name: <input type="text" name="Name">
+        <input type="submit" value="Register">
+</form>
+
+<% if @name %>
+  <h3>Welcome <%= @name %>!</h3>
+<% end %>
